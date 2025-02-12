@@ -1,0 +1,165 @@
+/* @import './base.css'; */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  font-family: font;
+  background-image: var(--backdrop-color);
+  position: relative;
+  --text-select-color: #3a8ee6;
+}
+
+a {
+  text-decoration: none; /* 去除默认的下划线 */
+  outline: none; /* 去除旧版浏览器的点击后的外虚线框 */
+  color: #000; /* 去除默认的颜色和点击后变化的颜色 */
+}
+/* ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+} */
+
+
+/* @font-face {
+  font-family: font;
+  src: url('@/assets/fonts/font/result.css') format('woff2');
+  font-display: swap;
+} */
+/* body{
+  font-family: 'MyCustomFont', serif;
+} */
+/* @font-face {
+  font-family:font;
+  src:url("./fonts/font65/04df2545e97db5ecfa74b60c60499aa7.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  unicode-range:U+F7,U+FB,U+152-153,U+192,U+3BC;
+} */
+
+
+.WorDwrap {
+  white-space: normal; /* 允许换行 */
+  word-wrap: break-word; /* 在必要时强制换行 */
+  word-break: break-word; /*支持长单词换行 */
+  text-overflow: ellipsis; /* 添加省略号 */
+  display: -webkit-box; /* 必须设置为盒模型 */
+  -webkit-box-orient: vertical; /* 设置盒子垂直布局 */
+  overflow: hidden; /* 隐藏多余的内容 */
+  -webkit-line-clamp: 2; /* 限制为两行 */
+  line-clamp: 2;
+}
+
+html[data-theme='light'] {
+  --header-back-color: linear-gradient(120deg, #fef4ea 0%, #eff8f3 100%);
+  --text-color: #303133;
+  --text-color1: #303133;
+  --text-color2: #666666;
+  --backdrop-color: linear-gradient(0.25turn, #fef4ea 0%, #eff8f3 80%);
+  --box-backgrd-color: #ffffff;
+  --box-shadow: #d2c9c2;
+  --theme-color: #3f91e7;
+  --botton-backcolor: #409eff;
+  --comcon-color: #f5f5f5;
+  --hover-color: #3a8ee6;
+  --text-color3: #303133;
+  --title-color: #303133;
+  --text-secondary:#666;
+  --catalogue-backcolor: #efeffe;
+  --bordder-color: rgba(0, 0, 0, 0.1);
+  
+  
+  --background-color: #232323;
+  --body-color: #2b2b2b;
+  --border-line: #414243;
+  --article-color: rgb(153, 153, 153);
+  --box-title_color: #bdbdbd;
+  --comment-box: #303030;
+  --im-user-box-backgroudColor: #ff80ab;
+  --im-box-backgroudColor: #9ccc65;
+  --im-backgroudColor: #323644;
+
+  --tips-backgroud-color: #414349;
+  --article-structure-backcolor: #606266;
+  --friend-tip-color: #606266;
+  --article-srect-background: repeating-linear-gradient(
+    145deg,
+    #000,
+    #000 15px,
+    #303133 0,
+    #303133 25px
+  );
+  --say-background: #303133;
+  --footer-background-color: #232323e0;
+  --forum-background-color: #303133;
+  --article-table-back-color: #000;
+  --article-table-border-color: #303133;
+  --pagination-background-color: #303133;
+  --pagination-border-color: #60626657;
+  --pagination-hover-color: #606266;
+  --article-share-color: #303030;
+  --docsearch-key-shadow: none;
+  --docsearch-key-gradient: rgba(125, 125, 125, 0.1);
+}
+html[data-theme='dark'] {
+  --header-back-color: linear-gradient(120deg, #2b2b2b 0%, #2b2b2b 100%);
+  --text-color: #d8d4d4;
+  --text-color1: #9999ff;
+  --text-color2: #8e8f90;
+  --backdrop-color: linear-gradient(0.25turn, #2b2b2b 0%, #2b2b2b 80%);
+  --box-backgrd-color: #232323;
+  --box-shadow: #242424;
+  --theme-color: #9999ff;
+  --botton-backcolor: #9999ff;
+  --comcon-color: #303030;
+  --text-color3: #409eff;
+  --hover-color: #a855f7;
+  --title-color:#f1eeee;
+  --text-secondary:#909399;
+  --catalogue-backcolor: #2b2b2b;
+  --bordder-color: rgba(255, 255, 255, .1);
+  
+  
+  --background-color: #232323;
+  --body-color: #2b2b2b;
+  --border-line: #414243;
+  --article-color: rgb(153, 153, 153);
+  --box-title_color: #bdbdbd;
+  --comment-box: #303030;
+  --im-user-box-backgroudColor: #ff80ab;
+  --im-box-backgroudColor: #9ccc65;
+  --im-backgroudColor: #323644;
+  --tips-backgroud-color: #414349;
+  --article-structure-backcolor: #606266;
+  --friend-tip-color: #606266;
+  --article-srect-background: repeating-linear-gradient(
+    145deg,
+    #000,
+    #000 15px,
+    #303133 0,
+    #303133 25px
+  );
+  --say-background: #303133;
+  --footer-background-color: #232323e0;
+  --forum-background-color: #303133;
+  --article-table-back-color: #000;
+  --article-table-border-color: #303133;
+  --pagination-background-color: #303133;
+  --pagination-border-color: #60626657;
+  --pagination-hover-color: #606266;
+  --article-share-color: #303030;
+  --docsearch-key-shadow: none;
+  --docsearch-key-gradient: rgba(125, 125, 125, 0.1);
+}
