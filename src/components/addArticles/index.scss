@@ -1,0 +1,78 @@
+.AddArticles{
+    background-color: #fff;
+
+    padding: 50px;
+    padding-top: 70px;
+    position: relative;
+    .back{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        &:hover{
+            color: #1890ff;
+        }
+    }
+    .Message{
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+    }
+    .MessageLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .Input{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        div{
+            display: flex;
+            align-items: center;
+            span{
+                margin-right: 10px;
+            }
+        }
+    }
+    .Select{
+        display: flex;
+        flex-direction: column;
+        .SelectCenter{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:1fr 1fr;
+            gap: 20px;
+            >div{
+                display: flex;
+                align-items: center;
+            }
+            > div>span {
+                margin-right: 10px;
+            };
+        }
+        .reship{
+            margin-top: 20px;
+            span {
+                margin-right: 10px;
+            }
+        }
+    }
+    .MessageRight{
+        display: flex;
+        flex-direction: column;
+        button{
+            width: 120px;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+
+
+.AiEditor{
+    /* background-color: aqua; */
+    height: 800px;
+}

@@ -1,0 +1,15 @@
+
+.Classify{
+  display: flex;
+  align-items: center;
+}
+
+.InpValue{
+    width: 170px;
+    margin-right: 30px;
+}
+
+.reset{
+  margin-left: 30px;
+}
+

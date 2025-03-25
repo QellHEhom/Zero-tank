@@ -1,0 +1,45 @@
+.Author {
+    padding: 24px 50px;
+
+    .Author-avatar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        p {
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+    }
+
+    .Author-form {
+        display: flex;
+        width: 80%;
+
+        >div {
+            flex: 1;
+            margin-right: 40px;
+        }
+    }
+
+    .Author-formbtn {
+        margin-top: 40px;
+        float: right;
+    }
+
+    .ant-upload-list-item-container {
+        width: 170px !important;
+        height: 170px !important;
+    }
+
+    .ant-upload-wrapper {
+        height: 150px !important;
+
+        .ant-upload-list-item,
+        .ant-upload-list-item-error {
+            width: 170px !important;
+            height: 170px !important;
+        }
+    }
+}

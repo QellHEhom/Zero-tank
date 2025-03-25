@@ -1,0 +1,45 @@
+.System {
+    padding: 24px 50px;
+
+    .System-avatar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        p {
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+    }
+
+    .System-form {
+        display: flex;
+        width: 80%;
+
+        >div {
+            flex: 1;
+            margin-right: 40px;
+        }
+    }
+
+    .System-formbtn {
+        margin-top: 40px;
+        float: right;
+    }
+
+    .ant-upload-list-item-container {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .ant-upload-wrapper {
+        height: 150px !important;
+
+        .ant-upload-list-item,
+        .ant-upload-list-item-error {
+            width: 150px !important;
+            height: 150px !important;
+        }
+    }
+}

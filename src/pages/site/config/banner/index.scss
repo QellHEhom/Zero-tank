@@ -1,0 +1,34 @@
+.Banner {
+    .banner-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ant-upload-list-item-container {
+        width: 250px !important;
+        height: 150px !important;
+    }
+
+    .ant-upload-wrapper {
+        height: 150px !important;
+
+        .ant-upload-list-item,
+        .ant-upload-list-item-error {
+            width: 250px !important;
+            height: 150px !important;
+        }
+    }
+
+
+
+    .ant-upload {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+
+
+
+}
