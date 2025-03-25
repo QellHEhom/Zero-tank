@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 import { CloseBold, View } from '@element-plus/icons-vue'
 import { getSearch } from '@/api/article'
-import router from '@/router'
+import router from '@/routes'
 const emit = defineEmits(['openSearch'])
 const showSearch = (event) => {
   event.stopPropagation() // 阻止冒泡

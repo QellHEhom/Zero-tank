@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import BloggerCar from '@/components/car/BlogCar.vue'
-import Affiche from '@/components/car/Affiche.vue'
+import BloggerCar from '@/components/car/AuthorCar/index.vue'
+import Affiche from '@/components/car/Affiche/index.vue'
 import { getTags, getRecommends } from '@/api/article'
 
 // 分类列表

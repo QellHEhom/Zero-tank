@@ -1,12 +1,12 @@
 <script setup>
 import { onMounted, reactive, ref } from 'vue'
-import BlogArticleItem from '@/components/home/BlogArticleItem.vue'
-import BloggerCar from '@/components/car/BlogCar.vue'
-import Affiche from '@/components/car/Affiche.vue'
-import router from '@/router'
+import ArticleItem from '@/components/ArticleItem/index.vue'
+import BloggerCar from '@/components/car/AuthorCar/index.vue'
+import Affiche from '@/components/car/Affiche/index.vue'
+import router from '@/routes'
 // api
 import { getBanner } from '@/api/article'
-import CanvasImg from '@/components/CanvasImg.vue'
+import CanvasImg from '@/components/CanvasImg/index.vue'
 
 let articleData = reactive([])
 // 标签选择
@@ -40,7 +40,7 @@ onMounted(() => {
         </el-carousel>
       </div>
       <div class="hot_category">
-        <BlogArticleItem :articleData="articleData" :tabsValue="tabsValue" />
+        <ArticleItem :articleData="articleData" :tabsValue="tabsValue" />
       </div>
     </main>
     <aside class="sidebar">

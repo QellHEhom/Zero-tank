@@ -3,7 +3,6 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
-
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
@@ -23,12 +22,8 @@ export default defineConfig({
         manualChunks(id) {
           if (id.includes('node_modules')) {
             if (id.includes('/node_modules/vue/')) return 'vendor-vue'
-            if (id.includes('/node_modules/vue-router/')) return 'vendor-vue-router'
-            if (id.includes('/node_modules/element-plus/es/components')) {
+            if (id.includes('/node_modules/element-plus')) {
               return 'vendor-element-components'
-            }
-            if (id.includes('/node_modules/element-plus/es/icon')) {
-              return 'vendor-element-icons'
             }
             if (id.includes('/node_modules/highlight')) {
               return 'vendor-highlight'

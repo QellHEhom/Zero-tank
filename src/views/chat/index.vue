@@ -95,6 +95,8 @@ const sendMessage = async () => {
 const startHeartbeat = () => {
   stopHeartbeat()
   heartbeatTimer = setInterval(() => {
+    console.log('websocket 心跳')
+
     if (socket.value && socket.value.readyState === WebSocket.OPEN) {
       socket.value.send(
         JSON.stringify({

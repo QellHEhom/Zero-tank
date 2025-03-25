@@ -1,7 +1,7 @@
 <script setup>
 import { View, ChatDotRound, Calendar } from '@element-plus/icons-vue'
 import { reactive, ref, onMounted, watch } from 'vue'
-import Anchor from '@/components/car/Anchor.vue'
+import Catalogue from '@/components/car/Catalogue/index.vue'
 import { useRoute } from 'vue-router'
 import { getArticle } from '@/api/article'
 // 高亮
@@ -516,7 +516,7 @@ onMounted(async () => {
     <!-- 目录导航 -->
     <aside class="sidebar">
       <div class="rigth-box">
-        <Anchor :tocItems="tocItems" />
+        <Catalogue :tocItems="tocItems" />
       </div>
     </aside>
   </div>

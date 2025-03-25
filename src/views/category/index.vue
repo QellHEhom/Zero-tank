@@ -1,9 +1,9 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import BloggerCar from '@/components/car/BlogCar.vue'
-import Affiche from '@/components/car/Affiche.vue'
+import BloggerCar from '@/components/car/AuthorCar/index.vue'
+import Affiche from '@/components/car/Affiche/index.vue'
 import { getCategory } from '@/api/article'
-import router from '@/router'
+import router from '@/routes'
 
 // 分类列表
 const categories = ref([

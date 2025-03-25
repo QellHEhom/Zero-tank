@@ -4,11 +4,11 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
-import router from './router'
+import router from './routes'
 
 const app = createApp(App)
 // 引入svg
-import SvgIcon from '@/components/SvgIcon.vue' // svg component
+import SvgIcon from '@/components/svgIcon/index.vue' // svg component
 app.component('svg-icon', SvgIcon)
 
 //高亮

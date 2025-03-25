@@ -2,7 +2,7 @@
 import { BellFilled, Search } from '@element-plus/icons-vue'
 import { ref, watch, computed, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { routerList } from '@/router/index'
+import { routerList } from '@/routes/index'
 import search from '@/components/search/index.vue'
 // 搜索
 let inputText = ref('')
@@ -43,11 +43,6 @@ const navTable = computed(() => {
   return arr
 })
 
-const navigateTo = (path) => {
-  console.log(path)
-
-  router.push({ path, replace: true })
-}
 const showSearch = ref(false)
 </script>
 
@@ -64,7 +59,7 @@ const showSearch = ref(false)
           <div
             v-for="item in navTable"
             :key="item.label"
-            @click="navigateTo(item.path)"
+            @click="router.push({ path: item.path, replace: true })"
             :class="{ active: item.path === currentPath }"
           >
             <svg-icon :name="item.icon"></svg-icon>
@@ -94,7 +89,10 @@ const showSearch = ref(false)
             </el-dropdown-menu>
           </template>
         </el-dropdown> -->
-        <img src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg" />
+        <img
+          src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+          @click="router.push('/login')"
+        />
       </div>
     </div>
   </header>

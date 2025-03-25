@@ -64,8 +64,6 @@ const data = [
     date: '2016-10-03',
   },
 ]
-
-
 </script>
 
 <template>

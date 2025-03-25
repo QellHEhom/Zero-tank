@@ -1,10 +1,10 @@
-// src/stores/announcement.js
 import { defineStore } from 'pinia'
 import { getWebConfig } from '@/api/article'
 import { ref } from 'vue'
 
 export const useWebDataStore = defineStore('store', () => {
   const webConfig = ref([])
+  const token = ref('')
   // 异步获取公告数据，并进行缓存（首次请求后存入 state）
   async function getWebConfigData() {
     // 如果已有数据，则直接返回，避免重复请求
@@ -24,5 +24,5 @@ export const useWebDataStore = defineStore('store', () => {
   }
   exitMain()
 
-  return { webConfig }
+  return { webConfig, token }
 })
