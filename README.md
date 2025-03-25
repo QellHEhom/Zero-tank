@@ -8,17 +8,15 @@
 
 ### main:
 
-    客户端；
-        使用技术：VUE3 、element plus、pinia、vue-router、axios
+    客户端；VUE3 、element plus、pinia、vue-router、axios
 
 ### admin:
 
-    后台管理端；
-        使用技术：React19 、Antd、React router
+    后台管理端；React19 、Antd、React router
 
 ### server:
 
-        使用技术：nodejs、express、Nginx、Websocket
+    服务器：nodejs、express、Nginx、Websocket
 
 ### 数据库：
 
